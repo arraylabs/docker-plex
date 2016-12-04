@@ -2,12 +2,12 @@ FROM lsiobase/xenial
 MAINTAINER Stian Larsen, sparklyballs
 
 # package version
-ENV PLEX_INSTALL="https://plex.tv/downloads/latest/1?channel=8&build=linux-ubuntu-x86_64&distro=ubuntu"
+ENV PLEX_INSTALL="https://downloads.plex.tv/plex-media-server/1.2.0.2838-a68e2fe/plexmediaserver_1.2.0.2838-a68e2fe_amd64.deb"
 
 # global environment settings
 ENV DEBIAN_FRONTEND="noninteractive"
 ENV HOME="/config"
-ENV PLEX_DOWNLOAD="https://downloads.plex.tv/plex-media-server"
+#ENV PLEX_DOWNLOAD="https://downloads.plex.tv/plex-media-server"
 
 # install packages
 RUN \
